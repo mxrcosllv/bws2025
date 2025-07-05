@@ -29,8 +29,8 @@ def submit(reserve_id, ticket_no, title, csrf_token):
     print(f"{reserve_id}的预约结果:", resp.json())
     if resp.json()["code"] == -702:
         return 702
-    if resp.json()["code"] != 0:
-        print(f"ID:{reserve_id} 活动:{title}预约成功")
+    if resp.json()["code"] == 0:
+        print(f"ID:{reserve_id} 活动:{title} 预约成功")
         return 0
     return resp.json()["code"]
 
