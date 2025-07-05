@@ -10,7 +10,7 @@
 
 ### Linux（Debian,Ubuntu)
 
-> `apt update && apt install git python3-venv python3-pip -y && git clone https://github.com/MCQTSS/bws2025 && cd bws2025 && python3 -m venv venv && source venv/bin/activate && pip instal requests && python3 main.py`
+> `apt update && apt install git python3 python3-venv python3-pip -y && git clone https://github.com/MCQTSS/bws2025 && cd bws2025 && python3 -m venv venv && source venv/bin/activate && pip install requests && python3 main.py`
 
 ### Windows
 
