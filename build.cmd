@@ -1,0 +1,1 @@
+nuitka --standalone --onefile --nofollow-import-to=tkinter --output-dir=dist main.py

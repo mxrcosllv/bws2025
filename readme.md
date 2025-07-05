@@ -1,0 +1,18 @@
+# BW乐园抢购脚本
+
+作者纯闲的没事的产物，可以用来抢BW乐园预约项目
+
+由于作者已经抢到5080了所以直接开源了（希望来点Star）
+
+自己的小群：https://t.me/mcqtss_chat
+
+## 使用方式
+
+### Linux（Debian,Ubuntu)
+
+> `apt update && apt install git python3-venv python3-pip -y && git clone https://github.com/MCQTSS/bws2025 && cd bws2025 && python3 -m venv venv && source venv/bin/activate && pip instal requests && python3 main.py`
+
+### Windows
+
+请查看[Releases](https://github.com/MCQTSS/bws2025/releases)
+
