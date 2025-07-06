@@ -26,11 +26,18 @@ def print_up_master_info(csrf):
 def submit(reserve_id, ticket_no, title, csrf_token):
     resp = requests.post(url="https://api.bilibili.com/x/activity/bws/online/park/reserve/do", headers=hea,
                          data={"inter_reserve_id": reserve_id, "ticket_no": ticket_no, "csrf": csrf_token})
-    print(f"{reserve_id}的预约结果:", resp.json())
+    try:
+        print(f"{reserve_id}的预约结果:", resp.json())
+    except Exception as e:
+        print(f"出现异常{e},已启用自动重试")
+        return 412
     if resp.json()["code"] == -702:
         return 702
     if resp.json()["code"] == 0:
         print(f"ID:{reserve_id} 活动:{title} 预约成功")
+        return 0
+    if resp.json()["code"] == 75574:
+        print(f"ID:{reserve_id} 活动场次已空,线程已自动关闭")
         return 0
     return resp.json()["code"]
 
@@ -56,6 +63,8 @@ def _run(startTime, reserve_id, ticket_no, title, csrf_token):
 
         if status == 0:
             break
+        elif status == 412:
+            continue
         elif status == 702:
             time.sleep(0.3)
             retry_status = submit(reserve_id, ticket_no, title, csrf_token)
